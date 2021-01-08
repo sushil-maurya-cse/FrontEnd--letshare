@@ -80,7 +80,7 @@ fileURL.addEventListener("click", () => {
 const uploadFile = () => {
   console.log("file added uploading");
 
-  files = fileInput.files;
+  const files = fileInput.files;
   const formData = new FormData();
   formData.append("myfile", files[0]);
 
