@@ -128,6 +128,7 @@ const onFileUploadSuccess = (res) => {
 
   const { file: url } = JSON.parse(res);
   console.log(url);
+  console.log(uploadURL);
   sharingContainer.style.display = "block";
   fileURL.value = url;
 };
