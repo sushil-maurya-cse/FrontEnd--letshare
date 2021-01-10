@@ -80,7 +80,7 @@ fileURL.addEventListener("click", () => {
 const uploadFile = () => {
   console.log("file added uploading");
 
-  const files = fileInput.files;
+  files = fileInput.files;
   const formData = new FormData();
   formData.append("MYFILES", files[0]);
 
@@ -128,7 +128,6 @@ const onFileUploadSuccess = (res) => {
 
   const { file: url } = JSON.parse(res);
   console.log(url);
-  console.log(uploadURL);
   sharingContainer.style.display = "block";
   fileURL.value = url;
 };
