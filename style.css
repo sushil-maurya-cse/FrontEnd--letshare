@@ -7,16 +7,18 @@
   
   body {
     font-family: system-ui;
-    background: var(--main-bg-color);
+    background: #ba183d;
     height: 98vh;
     overflow: hidden;
   }
   
   .logo {
-    position: absolute;
+      position: absolute;
     top: 0px;
     left: -7px;
-    width: 311px;
+    color: red;
+    width: 319px;
+    height: 91px;
   }
   
   .image-vector {
@@ -39,15 +41,15 @@
   }
   
   .upload-container {
-    background: #ffffff;
+        background: #d31616;
     border-radius: 25px;
-    box-shadow: 0px 20px 20px 0px #00000017;
+    box-shadow: 0px 20px 20px 0px #000000c2;
   }
   
   .drop-zone {
     width: var(--container-width);
     min-height: 200px;
-    border: 2px dashed var(--border-color);
+    border: 2px dashed #0b0101;
     border-radius: 10px;
     margin: 30px;
     transition: 0.2s all ease-in;
@@ -97,11 +99,15 @@
   
   .title {
     font-size: large;
+    font-family: cursive;
   }
   
   #browseBtn {
-    color: #2196f3;
+   color: #c49f18;
     cursor: pointer;
+    text-transform: capitalize;
+    font-family: cursive;
+
   }
   
   /* uploading progress styles */
@@ -130,7 +136,7 @@
   
   .progress-container .bg-progress {
     position: absolute;
-    background: var(--main-bg-color);
+    background: #ce5252;
     width: 100%;
     height: 100%;
     z-index: 1;
@@ -143,7 +149,7 @@
     width: 100%;
     height: 3px;
     border-radius: 2px;
-    background: #03a9f4;
+    background: #ce5252;;
     transition: transform 200ms linear;
     transform: scaleX(0);
     transform-origin: left;
@@ -159,12 +165,14 @@
   
   .sharing-container p {
     text-align: center;
+    font-family: cursive;
   }
   
   .sharing-container .expire {
     font-size: 16px;
     opacity: 0.7;
     margin-top: 0;
+    font-family: cursive;
   }
   
   .sharing-container .input-container {
@@ -175,24 +183,25 @@
   }
   
   .sharing-container .input-container input {
-    width: 100%;
+      width: 100%;
     border-radius: 3px;
     padding: 10px 15px;
     font-size: 20px;
     border: 2px dashed var(--border-color);
     border-radius: 6px;
-    background: #f5fcff;
-    color: #607d8b;
+    background: #ce5252;
+    font-family: cursive;
+    color: #181716;
   }
   
   .sharing-container img {
-    height: 22px;
+      height: 22px;
     width: 30px;
     position: absolute;
     right: 7px;
-    top: 12px;
+    top: 16px;
     cursor: pointer;
-    background: #f5fcff;
+    background: #ce5252;
   }
   
   .email-container form {
@@ -217,11 +226,13 @@
   }
   
   .email-container input {
-    border: none;
-    border-bottom: 2px solid var(--border-color);
+       border: none;
+    border-bottom: 2px solid #ce0e0e00;
     height: 19px;
-    font-size: 18px;
+    font-size: 16px;
     text-align: center;
+    background-color: #c88c8c;
+    font-family: cursive;
   }
   
   .email-container input:focus {
@@ -236,28 +247,28 @@
   }
   
   .send-btn-container button {
-    font-size: 18px;
+        font-size: 18px;
     padding: 8px 40px;
     margin-top: 15px;
-    background: var(--main-bg-color);
+    background: #ce5252;
     border: none;
     border-radius: 5px;
-    color: #607d8b;
+    color: #121212;
     cursor: pointer;
+    font-family: cursive;
   }
   
   .toast {
-    position: absolute;
+   position: absolute;
     bottom: 10px;
     right: 50%;
     transform: translate(50%, 60px);
     padding: 10px 20px;
-    background: var(--light-blue);
+    background: #dd0a1d;
     color: #fff;
     border-radius: 5px;
     font-size: 18px;
-    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1),
-      0px 4px 6px -2px rgba(0, 0, 0, 0.05);
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 4px 6px -2px rgba(0, 0, 0, 0.05);
     transition: transform ease-in-out 0.2s;
   }
   
