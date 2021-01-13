@@ -149,7 +149,7 @@
     width: 100%;
     height: 3px;
     border-radius: 2px;
-    background: #ce5252;;
+    background: black;;
     transition: transform 200ms linear;
     transform: scaleX(0);
     transform-origin: left;
@@ -283,6 +283,9 @@
     .image-vector {
       display: none;
     }
+      .logo{
+           width:100px;
+      }
     .email-container .filed {
       flex-direction: column;
     }
